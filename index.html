@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmul Hasan | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Effects -->
+    <div class="noise-overlay"></div>
+    <div class="bg-gradient bg-gradient-1"></div>
+    <div class="bg-gradient bg-gradient-2"></div>
+    <div class="bg-gradient bg-gradient-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo hover-target">
+            <i data-lucide="code-2"></i>
+            <span>Nazmul</span>.dev
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link hover-target active">Home</a></li>
+            <li><a href="#about" class="nav-link hover-target">About</a></li>
+            <li><a href="#education" class="nav-link hover-target">Education</a></li>
+            <li><a href="#skills" class="nav-link hover-target">Skills</a></li>
+            <li><a href="#projects" class="nav-link hover-target">Projects</a></li>
+            <li><a href="#experience" class="nav-link hover-target">Experience</a></li>
+            <li><a href="#contact" class="nav-link hover-target">Contact</a></li>
+        </ul>
+        <div class="nav-toggle hover-target" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">✨ Software Engineer</span>
+            <h1 class="hero-title">
+                Hello, I'm <span class="gradient-text">Nazmul Hasan</span>
+            </h1>
+            <p class="hero-subtitle">
+                Full Stack Developer | UI/UX Designer | Tech Enthusiast
+                <br>
+                I love creating modern web applications
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary hover-target">
+                    <i data-lucide="folder-open"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary hover-target">
+                    <i data-lucide="mail"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i data-lucide="chevron-down"></i>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-header reveal">
+            <span class="section-label">01. About Me</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+                My journey as a passionate software engineer
+            </p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <div class="about-img-wrapper hover-target">
+                    <img src="https://image.qwenlm.ai/public_source/89837891-c38c-4921-9fb8-b72eea30cf73/1058e05f3-81cb-4b1d-a100-1f865ded117e.png"
+                        alt="রায়হান আহমেদ" class="about-img">
+                    <div class="about-img-overlay"></div>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <h3>Technology Enthusiast</h3>
+                <p>
+                    I am a passionate software engineer with a strong background in web development.
+                    I have a deep interest in creating innovative solutions that enhance user experiences.
+                </p>
+                <p>
+                    I am currently working with React, Node.js, and cloud technologies.
+                    My goal is to create user-friendly and scalable applications.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card hover-target">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card hover-target">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card hover-target">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="section-header reveal">
+            <span class="section-label">02. My Education Qualifications</span>
+            <h2 class="section-title">My Education</h2>
+            <p class="section-subtitle">
+                My academic background and achievements
+            </p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content hover-target">
+                    <span class="timeline-year">2026-2030</span>
+                    <h3 class="timeline-degree">B.Sc. in CSE</h3>
+                    <p class="timeline-school">Dhaka University of Engineering and Technology</p>
+                    <p class="timeline-desc">
+                        Artificial Intelligence and Machine Learning specialization.
+                        GPA: 3.95/4.00. Graduated with distinction and received the Dean's Award for academic
+                        excellence.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content hover-target">
+                    <span class="timeline-year">2022-2026</span>
+                    <h3 class="timeline-degree">Diploma in Computer Science</h3>
+                    <p class="timeline-school">National Polytechnic Institute, Manikganj</p>
+                    <p class="timeline-desc">
+                        Computer science diploma with a focus on software development and networking.
+                        Cgpa: 3.78/4.00. Graduated with distinction and received the Dean's Award for academic
+                        excellence.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content hover-target">
+                    <span class="timeline-year">2020-2022</span>
+                    <h3 class="timeline-degree">SSC</h3>
+                    <p class="timeline-school">Shalfa Technical School & College</p>
+                    <p class="timeline-desc">
+                        Technical education with a focus on computer science.
+                        GPA: 5.00/5.00. Graduated with top honors in the institution.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content hover-target">
+                    <span class="timeline-year">2019-2020</span>
+                    <h3 class="timeline-degree">JSC</h3>
+                    <p class="timeline-school">Decent International School & College</p>
+                    <p class="timeline-desc">
+                        GPA: 5.00/5.00. Achieved top position in the school for outstanding academic performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="section-header reveal">
+            <span class="section-label">03. Skills</span>
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">
+                Technologies and tools I'm proficient in
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3 class="skill-name">Frontend Development</h3>
+                <p class="skill-desc">
+                    Skilled in creating modern and responsive web interfaces.
+                    I focus on delivering excellent user experiences.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="95"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="server"></i>
+                </div>
+                <h3 class="skill-name">Backend Development</h3>
+                <p class="skill-desc">
+                    Developing scalable APIs and server-side applications.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="90"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="database"></i>
+                </div>
+                <h3 class="skill-name">Database Management</h3>
+                <p class="skill-desc">
+                    Relational and NoSQL database design, optimization, and management.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="cloud"></i>
+                </div>
+                <h3 class="skill-name">Cloud Services</h3>
+                <p class="skill-desc">
+                    Experience in deploying and managing applications on AWS, Azure, and GCP.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <h3 class="skill-name">Mobile Development</h3>
+                <p class="skill-desc">
+                    Developing cross-platform mobile applications using React Native.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="75"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal hover-target">
+                <div class="skill-icon">
+                    <i data-lucide="figma"></i>
+                </div>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <p class="skill-desc">
+                    User-centered design and prototyping.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-width="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section-header reveal">
+            <span class="section-label">04. Projects</span>
+            <h2 class="section-title">My Work</h2>
+            <p class="section-subtitle">
+                Some selected projects I'm proud of
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal hover-target">
+                <img src="./R.jpg"
+                    alt="ই-কমার্স প্ল্যাটফর্ম" class="project-image">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-desc">
+                        A full-stack e-commerce website with product management,
+                        payment gateway, and order tracking system.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal hover-target">
+                <img src="./1676893637285.png"
+                    alt="টাস্ক ম্যানেজমেন্ট" class="project-image" style="filter: hue-rotate(45deg);">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Tailwind</span>
+                    </div>
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-desc">
+                        A task management application for team collaboration. Features include real-time updates,
+                        drag-and-drop task organization, and deadline reminders.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal hover-target">
+                <img src="./2db7e57c-ec06-4bab-9e2b-efe10d293111-cover.png"
+                    alt="হেলথ কেয়ার অ্যাপ" class="project-image" style="filter: hue-rotate(90deg);">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">GraphQL</span>
+                        <span class="project-tag">AWS</span>
+                    </div>
+                    <h3 class="project-title">Healthcare App</h3>
+                    <p class="project-desc">
+                        Mobile healthcare application where patients can book appointments with doctors
+                        and view their medical reports.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal hover-target">
+                <img src="./1601f8159984811.63aac1c39fbe6.jpg"
+                    alt="ফিনটেক ড্যাশবোর্ড" class="project-image" style="filter: hue-rotate(135deg);">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">D3.js</span>
+                    </div>
+                    <h3 class="project-title">Weather Apps Dashboard</h3>
+                    <p class="project-desc">
+                        Financial data visualization dashboard.
+                        Real-time stock market data and portfolio tracking.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal hover-target">
+                <img src="./create-a-modern-website-using-react-js-nextj-s-and-tailwind-css.png"
+                    alt="ফিনটেক ড্যাশবোর্ড" class="project-image" style="filter: hue-rotate(135deg);">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">D3.js</span>
+                    </div>
+                    <h3 class="project-title">Modern React Website</h3>
+                    <p class="project-desc">
+                        A modern responsive website built with React and Tailwind CSS.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link hover-target">
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="section-header reveal">
+            <span class="section-label">05. Experience</span>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">
+                My professional journey and achievements
+            </p>
+        </div>
+        <div class="experience-cards">
+            <div class="exp-card reveal hover-target">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-company">Senior Software Engineer</h3>
+                        <p class="exp-role">TechSolutions Ltd.</p>
+                    </div>
+                    <span class="exp-period">2022 - Present</span>
+                </div>
+                <p class="exp-desc">
+                    Leading a 10-member development team. Working on microservices architecture
+                    and cloud-native application development.
+                </p>
+                <div class="exp-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>AWS</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+            <div class="exp-card reveal hover-target">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-company">Software Engineer</h3>
+                        <p class="exp-role">Digital Bangladesh Inc.</p>
+                    </div>
+                    <span class="exp-period">2020 - 2022</span>
+                </div>
+                <p class="exp-desc">
+                    Full stack web development. Worked on government projects used by over 10 lakh users.
+                </p>
+                <div class="exp-tech">
+                    <span>Vue.js</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+            <div class="exp-card reveal hover-target">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-company">Junior Developer</h3>
+                        <p class="exp-role">Startup Hub</p>
+                    </div>
+                    <span class="exp-period">2019 - 2020</span>
+                </div>
+                <p class="exp-desc">
+                    Project-based web development.
+                    Experience with agile methodologies and Scrum.
+                </p>
+                <div class="exp-tech">
+                    <span>JavaScript</span>
+                    <span>MongoDB</span>
+                    <span>Express</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-header reveal">
+            <span class="section-label">06. Contact</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Want to discuss a project? Send a message
+            </p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-input hover-target" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input hover-target" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-input hover-target" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-textarea hover-target" placeholder="Your message here..."
+                        required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary hover-target">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item reveal hover-target">
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>nrabby27@gmail.com</p>
+                </div>
+                <div class="contact-item reveal hover-target">
+                    <div class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p>+880 1842729204</p>
+                </div>
+                <div class="contact-item reveal hover-target">
+                    <div class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <span>Nazmul</span>.dev
+            </div>
+            <!-- Footer Social Section -->
+            <div class="footer-social">
+                <!-- GitHub -->
+                <a href="https://github.com/nazmul423" class="social-link" target="_blank" rel="noopener noreferrer"
+                    title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/nazmul-hasan-rabby-606647296/" class="social-link" target="_blank"
+                    rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Twitter/X -->
+                <a href="https://x.com/nrabby27" class="social-link" target="_blank" rel="noopener noreferrer"
+                    title="Twitter/X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/nazmul.rabby.52" class="social-link" target="_blank"
+                    rel="noopener noreferrer" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+
+          
+    </footer>
+
+
+    <script>
+        
+        window.onload = function () {
+            lucide.createIcons();
+        };
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
