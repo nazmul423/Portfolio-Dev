@@ -928,70 +928,168 @@
     }
 
     /* ==================== FOOTER ==================== */
+
+
     .footer {
         background: var(--bg-secondary);
-        padding: 3rem;
-        border-top: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            width: 100%;
+            border-top: 1px solid var(--border-color);
+        
     }
 
-    .footer-content {
+    .footer-container {
         max-width: 1200px;
-        margin: 0 auto 3rem;
+        margin: 0 auto;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
-        /* margin-bottom: 2rem; */
+        gap: 20px;
     }
 
-    .footer-logo {
-        font-family: var(--font-mono);
-        font-size: 1.3rem;
-        font-weight: 700;
-    }
+    /* Logo Styling */
+        .footer-logo {
+            font-family: var(--font-mono);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
 
-    .footer-logo span {
-        background: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
+        .footer-logo span {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
+    /* Footer Social Container */
     .footer-social {
         display: flex;
-        
-        gap: 1rem;
-        margin-left: auto;
+        gap: 12px;
         align-items: center;
-
     }
 
-
+    /* Social Link Style - Matching Logo Design */
     .social-link {
-        width: 45px;
-        height: 45px;
-        background: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--text-primary);
-        transition: var(--transition);
-        cursor: none;
-        margin-bottom: 1rem;
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        font-size: 18px;
         text-decoration: none;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
     }
 
+    /* Hover Effects */
     .social-link:hover {
-        background: var(--accent-gradient);
-        border-color: transparent;
+        background: rgba(139, 92, 246, 0.2);
+        border-color: rgba(139, 92, 246, 0.5);
         transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
     }
 
-    /* Copyright Section */
+    /* Individual Platform Colors on Hover */
+    .social-link[href*="github"]:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    }
 
+    .social-link[href*="linkedin"]:hover {
+        background: rgba(0, 119, 181, 0.2);
+        border-color: rgba(0, 119, 181, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);
+    }
+
+    .social-link[href*="twitter"]:hover,
+    .social-link[href*="x.com"]:hover {
+        background: rgba(29, 161, 242, 0.2);
+        border-color: rgba(29, 161, 242, 0.5);
+        box-shadow: 0 5px 15px rgba(29, 161, 242, 0.3);
+    }
+
+    .social-link[href*="facebook"]:hover {
+        background: rgba(24, 119, 242, 0.2);
+        border-color: rgba(24, 119, 242, 0.5);
+        box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+    }
+
+    /* Active/Click Effect */
+    .social-link:active {
+        transform: translateY(-1px);
+    }
+
+    /* Icon Styling */
+    .social-link i {
+        transition: transform 0.3s ease;
+    }
+
+    .social-link:hover i {
+        transform: scale(1.1);
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        max-width: 1200px;
+        margin: 30px auto 0;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-bottom p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+    }
+
+    /* ==================== MOBILE RESPONSIVE ==================== */
+    @media (max-width: 768px) {
+        .footer {
+            padding: 2rem 1rem;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+
+        .footer-social {
+            justify-content: center;
+        }
+    }
+
+
+    /* ==================== MOBILE RESPONSIVE ==================== */
+    @media (max-width: 768px) {
+        .footer {
+            padding: 2rem 1rem;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+
+        .footer-social {
+            justify-content: center;
+        }
+    }
 
     /* ==================== SCROLL REVEAL ==================== */
     .reveal {
@@ -1118,7 +1216,7 @@
         .footer-content {
             flex-direction: column;
             text-align: center;
-            
+
         }
     }
 

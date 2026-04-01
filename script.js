@@ -243,6 +243,7 @@ document.querySelectorAll('.btn').forEach(btn => {
     });
 });
 
+
 // Add ripple animation
 const style = document.createElement('style');
 style.textContent = `
@@ -254,27 +255,20 @@ style.textContent = `
             }
         `;
 document.head.appendChild(style);
-// সোশ্যাল মিডিয়া আইকন ক্লিক হ্যান্ডলার
-document.querySelectorAll('.hover-target').forEach(link => {
-    link.addEventListener('click', function (e) {
-        // যদি আইকনটি একটি লিঙ্কের ভেতরে থাকে তবে পেজ যেন জাম্প না করে
-        e.preventDefault();
 
-        const icon = this.querySelector('i');
-        if (icon) {
-            const iconName = icon.getAttribute('data-lucide');
-
-            if (iconName === 'github') {
-                window.open('https://github.com/nazmul423', '_blank');
-            } else if (iconName === 'linkedin') {
-                window.open('https://www.linkedin.com/in/nazmul-hasan-rabby-606647296/', '_blank');
-            } else if (iconName === 'twitter') {
-                window.open('https://x.com/nrabby27', '_blank');
-            } else if (iconName === 'facebook') {
-                window.open('https://www.facebook.com/nazmul.rabby.52', '_blank');
-            }
-        }
+document.querySelectorAll('.social-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Ripple effect বা analytics ট্র্যাক করতে চাইলে এখানে কোড লিখুন
+        console.log(`Opened: ${this.title}`);
+        
+        // উদাহরণ: Google Analytics Event
+        // gtag('event', 'click', { 'event_category': 'social', 'event_label': this.title });
     });
 });
+
+
+
+
+
 
 console.log('🚀 Portfolio loaded successfully!');
