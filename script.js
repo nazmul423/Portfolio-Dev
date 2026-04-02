@@ -257,18 +257,14 @@ style.textContent = `
 document.head.appendChild(style);
 
 document.querySelectorAll('.social-link').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         // Ripple effect বা analytics ট্র্যাক করতে চাইলে এখানে কোড লিখুন
         console.log(`Opened: ${this.title}`);
-        
+
         // উদাহরণ: Google Analytics Event
         // gtag('event', 'click', { 'event_category': 'social', 'event_label': this.title });
     });
 });
-
-
-
-
 
 
 console.log('🚀 Portfolio loaded successfully!');
